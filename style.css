@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  background-image: url(img/header-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 2rem;
+  align-items: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 270px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #fff;
+  padding: 2rem;
+}
+nav ul li a:hover {
+  background-color: coral;
+  transition: all 0.5s;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  color: #fff;
+}
+h1 {
+  font-size: 4.8rem;
+}
+/* PROJECT SECTION */
+section {
+  padding: 6rem 0;
+}
+#projects {
+  background-color: #fafafa;
+}
+h2 {
+  font-size: 3.6rem;
+  padding: 3rem 0;
+  margin-left: 15rem;
+  color: #333332;
+}
+
+.cards {
+  width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.card {
+  width: 33.3333%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+}
+.card h3 {
+  padding: 1.5rem 0;
+  font-size: 2.6rem;
+}
+.card p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.card a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: coral;
+}
+#about {
+  background-color: #eacb9b;
+}
+.aboutme {
+  width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme p {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+  padding-right: 20px;
+}
+.aboutme img {
+  width: 30%;
+}
+#skills {
+  background-color: #fafafa;
+}
+.skill {
+  width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.skill-box {
+  height: 250px;
+  width: 250px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #cdcdcb;
+}
+.skill-box h3 {
+  font-size: 28px;
+  text-align: center;
+}
+.icon {
+  width: 60px;
+  margin: 0 auto;
+}
+#progressbar {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbar > div {
+  background-color: orange;
+  height: 20px;
+  border-radius: 10px;
+}
+.html5 {
+  width: 90%;
+}
+.css3 {
+  width: 95%;
+}
+.teaching {
+  width: 85%;
+}
+.coaching {
+  width: 80%;
+}
+footer {
+  background-color: #333332;
+  color: #fff;
+  font-size: 20px;
+}
+.footer__content {
+  width: 114rem;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+}
+.form__group {
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+}
+form label {
+  display: inline-block;
+  width: 200px;
+}
+form input {
+  padding: 10px;
+  width: 300px;
+}
+textarea {
+  padding: 10px;
+}
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #cdcdcb;
+}
+.btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: coral;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-left: 200px;
+  cursor: pointer;
+}
