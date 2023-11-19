@@ -1,5 +1,7 @@
 const backToTop = document.querySelector('#backToTop');
-
+const mobIcon = document.querySelector('.mobIcon');
+const nav = document.querySelector('nav ul');
+const menuItems = document.querySelectorAll('nav ul li a');
 // Browser onscroll event triger
 window.onscroll = function () {
   scrollFunction();
@@ -21,4 +23,15 @@ function getTop() {
   document.documentElement.scrollTop = 0;
 }
 
+const mobMenu = () => {
+  for (const item of menuItems) {
+    item.addEventListener('click', mobMenu);
+  }
+  if (nav.classList.contains('responsive')) {
+    nav.classList.remove('responsive');
+  } else {
+    nav.classList.add('responsive');
+  }
+};
 backToTop.addEventListener('click', getTop);
+mobIcon.addEventListener('click', mobMenu);
