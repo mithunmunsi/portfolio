@@ -19,6 +19,7 @@ header {
   padding-top: 2rem;
   align-items: center;
   height: 100vh;
+  width: 100vw;
 }
 nav {
   display: flex;
@@ -70,6 +71,12 @@ h1 {
 }
 
 @media (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .sticky {
+    position: inherit;
+  }
   .mobIcon {
     display: block;
   }
@@ -91,8 +98,35 @@ h1 {
   nav ul.responsive li a {
     display: block;
   }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80% !important;
+  }
+  .aboutme {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .aboutme p {
+    padding: 100px;
+  }
+  .aboutme img {
+    width: 90% !important;
+  }
+  .skill {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content {
+    width: 100% !important;
+  }
 }
 /* PROJECT SECTION */
+.container {
+  max-width: 114rem;
+}
 section {
   padding: 6rem 0;
 }
@@ -107,7 +141,6 @@ h2 {
 }
 
 .cards {
-  width: 114rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -140,17 +173,16 @@ h2 {
   background-color: #eacb9b;
 }
 .aboutme {
-  width: 114rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .aboutme p {
   font-size: 16px;
   line-height: 1.4;
   text-align: justify;
-  padding-right: 20px;
 }
 .aboutme img {
   width: 30%;
@@ -159,7 +191,6 @@ h2 {
   background-color: #fafafa;
 }
 .skill {
-  width: 114rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -211,7 +242,6 @@ footer {
   font-size: 20px;
 }
 .footer__content {
-  width: 114rem;
   margin: 0 auto;
   padding-bottom: 10px;
 }
