@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
@@ -213,4 +215,11 @@ textarea {
   outline: none;
   margin-left: 200px;
   cursor: pointer;
+}
+#backToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  display: none;
 }
