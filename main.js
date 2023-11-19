@@ -2,6 +2,7 @@ const backToTop = document.querySelector('#backToTop');
 const mobIcon = document.querySelector('.mobIcon');
 const nav = document.querySelector('nav ul');
 const menuItems = document.querySelectorAll('nav ul li a');
+const sticky = document.querySelector('nav');
 // Browser onscroll event triger
 window.onscroll = function () {
   scrollFunction();
@@ -15,6 +16,11 @@ function scrollFunction() {
     backToTop.style.display = 'block';
   } else {
     backToTop.style.display = 'none';
+  }
+  if (document.body.scrollTo > 80 || document.documentElement.scrollTop > 80) {
+    sticky.classList.add('sticky');
+  } else {
+    sticky.classList.remove('sticky');
   }
 }
 

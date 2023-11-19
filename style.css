@@ -25,6 +25,13 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.sticky {
+  background-color: #4d387d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s ease-in;
+}
 .logo {
   width: 270px;
 }
@@ -207,6 +214,10 @@ footer {
   width: 114rem;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+footer h2 {
+  color: #fff;
+  text-align: center;
 }
 form {
   width: 650px;
